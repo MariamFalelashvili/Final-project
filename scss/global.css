@@ -139,4 +139,91 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .container {
+  width: 100%;
+  height: 136px;
+  background-color: rgba(1, 68, 68, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .div1 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .container .div1 img {
+  width: 300px;
+}
+header .container .div1 .div2 {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .div1 .div2 form {
+  width: 560px;
+  height: 40px;
+}
+header .container .div1 .div2 form input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: gray;
+  text-align: center;
+}
+header .container .div1 .div2 form .fa-magnifying-glass {
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 5px;
+}
+header .container .div1 .div3 {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .div1 .div3 .fa-caret-up {
+  scroll-behavior: auto;
+}
+header .container .div1 .div3 h2 {
+  color: #eae2e2;
+  font-size: 20px;
+  font-family: Helvetica;
+}
+header .container .div1 .div4 {
+  width: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .div1 .div4 h2 {
+  color: #eae2e2;
+  font-size: 20px;
+  font-family: Helvetica;
+}
+header .container2 {
+  width: 100%;
+  height: 72px;
+  background-color: rgba(1, 93, 93, 0.816);
+}
+header .container2 nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+header .container2 nav h2 {
+  color: #eae2e2;
+  font-family: Helvetica;
+  font-size: 20px;
 }/*# sourceMappingURL=global.css.map */
