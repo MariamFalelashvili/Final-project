@@ -143,30 +143,51 @@ a {
 
 header {
   width: 100%;
+  height: 1000px;
+  background-image: url(../images/1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1220px) {
+  header img {
+    display: none;
+  }
 }
 header .container {
   width: 100%;
   height: 136px;
-  background-color: rgba(1, 68, 68, 0.8);
+  background-color: #967979;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0.9;
 }
 header .container .div1 {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
+@media (max-width: 900px) {
+  header .container .div1 {
+    width: 90%;
+  }
+}
 header .container .div1 img {
   width: 300px;
 }
 header .container .div1 .div2 {
-  width: 600px;
+  max-width: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 900px) {
+  header .container .div1 .div2 {
+    width: 90%;
+    justify-content: space-between;
+  }
 }
 header .container .div1 .div2 form {
   width: 560px;
@@ -178,43 +199,55 @@ header .container .div1 .div2 form input {
   border-radius: 10px;
   color: gray;
   text-align: center;
+  border: none;
 }
 header .container .div1 .div2 form .fa-magnifying-glass {
   position: absolute;
   margin-top: 18px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
-header .container .div1 .div3 {
-  width: 125px;
+header .container .div1 button {
+  width: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: none;
+  border: none;
 }
-header .container .div1 .div3 .fa-caret-up {
-  scroll-behavior: auto;
+@media (max-width: 900px) {
+  header .container .div1 button {
+    display: none;
+  }
 }
-header .container .div1 .div3 h2 {
+header .container .div1 button h2 {
   color: #eae2e2;
   font-size: 20px;
   font-family: Helvetica;
 }
-header .container .div1 .div4 {
-  width: 115px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header .container .div1 button h2:hover {
+  color: #484141;
 }
-header .container .div1 .div4 h2 {
-  color: #eae2e2;
-  font-size: 20px;
-  font-family: Helvetica;
+header .container .div1 .fa-bars {
+  display: none;
 }
-header .container2 {
+@media (max-width: 900px) {
+  header .container .div1 .fa-bars {
+    display: block;
+  }
+}
+
+.container2 {
   width: 100%;
   height: 72px;
-  background-color: rgba(1, 93, 93, 0.816);
+  background-color: rgba(150, 121, 121, 0.9333333333);
+  opacity: 0.7;
 }
-header .container2 nav {
+@media (max-width: 900px) {
+  .container2 {
+    display: none;
+  }
+}
+.container2 nav {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -222,8 +255,26 @@ header .container2 nav {
   width: 40%;
   height: 100%;
 }
-header .container2 nav h2 {
-  color: #eae2e2;
+.container2 nav h2 {
+  color: #f8f8f8;
   font-family: Helvetica;
   font-size: 20px;
+}
+.container2 nav h2:hover {
+  color: #484141;
+}
+
+.div5 h2 {
+  font-family: cursive;
+  font-size: 100px;
+  color: #484141;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.div5 h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: #514242;
+  margin-top: 30px;
+  margin-left: 100px;
 }/*# sourceMappingURL=global.css.map */
