@@ -156,7 +156,7 @@ header {
 header .container {
   width: 100%;
   height: 136px;
-  background-color: #967979;
+  background-color: #79967b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -207,7 +207,7 @@ header .container .div1 .div2 form .fa-magnifying-glass {
   margin-left: 10px;
 }
 header .container .div1 button {
-  width: 130px;
+  width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -219,9 +219,12 @@ header .container .div1 button {
     display: none;
   }
 }
+header .container .div1 button .fa-caret-up {
+  margin-right: 10px;
+}
 header .container .div1 button h2 {
   color: #eae2e2;
-  font-size: 20px;
+  font-size: 25px;
   font-family: Helvetica;
 }
 header .container .div1 button h2:hover {
@@ -239,7 +242,7 @@ header .container .div1 .fa-bars {
 .container2 {
   width: 100%;
   height: 72px;
-  background-color: rgba(150, 121, 121, 0.9333333333);
+  background-color: rgba(121, 150, 132, 0.9098039216);
   opacity: 0.7;
 }
 @media (max-width: 900px) {
@@ -255,12 +258,18 @@ header .container .div1 .fa-bars {
   width: 40%;
   height: 100%;
 }
-.container2 nav h2 {
+.container2 nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container2 nav ul a {
   color: #f8f8f8;
   font-family: Helvetica;
   font-size: 20px;
 }
-.container2 nav h2:hover {
+.container2 nav ul a:hover {
   color: #484141;
 }
 
@@ -277,4 +286,95 @@ header .container .div1 .fa-bars {
   color: #514242;
   margin-top: 30px;
   margin-left: 100px;
+}
+
+footer {
+  max-width: 100%;
+}
+footer button {
+  width: 100%;
+  height: 72px;
+  background-color: #7ea68d;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+footer button h2 {
+  color: #eae2e2;
+  font-weight: bold;
+}
+footer .container {
+  width: 100%;
+  height: 300px;
+  background-color: #79967b;
+  display: flex;
+  justify-content: space-around;
+}
+footer .container .card1 {
+  max-width: 300px;
+  height: 100%;
+}
+footer .container .card1 img {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer .container .card1 h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: #514242;
+  color: #eae2e2;
+}
+footer .container .card2 {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+footer .container .card2 ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer .container .card2 ul li {
+  margin-top: 10px;
+  line-height: 25px;
+}
+footer .container .card2 ul li a {
+  color: #f8f8f8;
+  font-family: Helvetica;
+  font-size: 20px;
+}
+footer .container .card2 ul li a:hover {
+  color: #484141;
+}
+footer .container .card3 {
+  width: 160px;
+  display: flex;
+  align-items: center;
+}
+footer .container .card3 ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer .container .card3 ul li {
+  margin-top: 10px;
+  line-height: 25px;
+}
+footer .container .card3 ul li a {
+  color: #f8f8f8;
+  font-family: Helvetica;
+  font-size: 20px;
+}
+footer .container .card3 ul li a:hover {
+  color: #484141;
+}
+footer .container .card4 {
+  width: 200px;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }/*# sourceMappingURL=global.css.map */
