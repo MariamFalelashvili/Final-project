@@ -311,6 +311,76 @@ section{
     
     }
 }
+.s-3{
+  width: 100%;
+  height: 750px;
+  background-color: #eae7e7ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2{
+      font-family: Helvetica;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-left: 210px;
+
+  }
+  .card-wrapper2{
+    width: 100%;
+    @include goflex;
+    justify-content: space-around;
+    .card1{
+      width: 400px;
+      height: 550px;
+      border: 1px solid rgb(70, 68, 68);
+      border-radius: 20px;
+      img{
+        width: 100%;
+        height: 55%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+
+      }
+      .card-body{
+        width: 100%;
+        height: 224px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        h5{
+          font-family: Helvetica;
+          font-size: 30px;
+          font-weight: bold;
+        }
+        p{
+          font-family: Helvetica;
+          font-size: 20px;
+          width: 250px;
+        }
+        .a{
+          width: 150px;
+          height: 50px;
+          background-color: #11724ef1;
+          display: flex;
+          align-items: center;
+          border-radius: 10px;
+          &:hover{
+            opacity: 0.7;
+          }
+          a{
+            color: #f1f1f1;
+            font-family: sans-serif;
+            font-size: 25px;
+            width: 100%;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
 footer {
   max-width: 100%;
   button {
