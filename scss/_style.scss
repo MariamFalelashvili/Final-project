@@ -16,7 +16,8 @@ header {
     @include goflex;
     opacity: 0.9;
     .div1 {
-      width: 90%;
+      width: 95%;
+      right: 10px;
       @include goflex;
       margin: 0 auto;
       @media (max-width: 900px) {
@@ -60,20 +61,105 @@ header {
         }
         .fa-caret-up {
           margin-right: 10px;
+          &:hover {
+            opacity: 0.6;
+          }
         }
         h2 {
           color: $text-color;
           font-size: 25px;
           font-family: Helvetica;
           &:hover {
-            color: #484141;
+            opacity: 0.6;
           }
+        }
+        .fa-heart {
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+      select {
+        width: 100px;
+        height: 30px;
+        background-color: $text-color;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+        option {
+          font-family: Helvetica;
+          font-size: 15px;
+          color: #514242;
+        }
+        .categories {
+          display: none;
+        }
+      }
+      .favorites {
+        @include goflex;
+        &:hover {
+          opacity: 0.8;
+        }
+        .fa-heart {
+          margin-right: 10px;
         }
       }
       .fa-bars {
         display: none;
         @media (max-width: 900px) {
           display: block;
+        }
+      }
+      .fa-user {
+        cursor: pointer;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .register-form {
+    display: none;
+    position: fixed;
+    left: 550px;
+    top: 250px;
+    z-index: 9;
+    .form-container {
+      max-width: 400px;
+      background-color: white;
+      padding: 10px;
+      h1 {
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      input {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+      .btn {
+        background-color: #1a9f6e;
+        @include register-form;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .cancel {
+        background-color: red;
+        @include register-form;
+        &:hover {
+          opacity: 1;
         }
       }
     }
@@ -92,10 +178,10 @@ header {
     @include goflex;
     width: 40%;
     height: 100%;
-    ul{
+    ul {
       width: 100%;
       @include goflex;
-      a{
+      a {
         @include li;
       }
     }
@@ -115,6 +201,116 @@ header {
     margin-left: 100px;
   }
 }
+section{
+  width: 100%;
+  .container{
+    width: 100%;
+    margin-top: 120px;
+  .div1 {
+    width: 82%;
+    @include goflex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    h1 {
+      font-family: Helvetica;
+      font-size: 30px;
+    }
+    h3{
+      font-family: Helvetica;
+      color: #a18686;
+      cursor: pointer;
+      &:hover{
+        opacity: 0.7;
+        text-decoration: underline;
+      }
+    }
+  }
+  .card-wrapper{
+    width: 90%;
+    @include goflex;
+    margin: 0 auto;
+    .card{
+      width: 400px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover{
+        opacity: 0.8;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        filter: brightness(50%);
+        border-radius: 10px;
+      }
+      h2{
+        color: #f8f8f8;
+        font-family: Helvetica;
+        font-size: 40px;
+        position: absolute;
+      }
+    }
+  }
+  .fa-arrow-right{
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  }
+  .container2{
+    margin: 0 auto;
+    width: 83%;
+    height: 600px;
+    background-image: url(../images/8.jpeg);
+    background-size: cover;
+    margin-top: 120px;
+    margin-bottom: 74px;
+    border-radius: 10px;
+    filter: brightness(70%);
+    border: 1px solid white;
+    opacity: 1;
+    .Yoga{
+      h2{
+        font-family: cursive;
+        font-size: 40px;
+        color: white;
+        margin-top: 60px;
+        margin-left: 70px;
+      }
+      h3{
+        @include h3;
+        margin-top: 30px;
+        margin-left: 150px;
+        color: $text-color;
+      }
+      }
+      p{
+        font-size: 25px;
+        width: 400px;
+        margin-left: 840px;
+        color: white;
+        font-family: Hevetica, sans-serif;
+      }
+      .readmore{
+        width: 140px;
+        height: 60px;
+        background-color: $color2;
+        border-radius: 10px;
+        margin-left: 90px;
+        margin-top: 80px;
+        border: none;
+        &:hover{
+          opacity: 0.7;
+        }
+        h4{
+          @include li;
+        }
+    }
+    
+    }
+}
 footer {
   max-width: 100%;
   button {
@@ -123,9 +319,14 @@ footer {
     background-color: #7ea68d;
     border: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    padding-top: 15px;
+    &:hover {
+      background-color: #7ea68dc5;
+    }
+    cursor: pointer;
     h2 {
       color: $text-color;
       font-weight: bold;
@@ -150,15 +351,15 @@ footer {
         color: $text-color;
       }
     }
-    .card2{
+    .card2 {
       width: 100px;
       @include card-style;
     }
-    .card3{
+    .card3 {
       width: 160px;
       @include card-style;
     }
-    .card4{
+    .card4 {
       width: 200px;
       height: 90%;
       display: flex;

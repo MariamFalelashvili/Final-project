@@ -13,7 +13,7 @@
         font-family: Helvetica;
         font-size: 20px;
         &:hover {
-        color: #484141;
+        opacity: 0.6;
       }
 }
 @mixin card-style{
@@ -31,4 +31,13 @@
           }
         }
       }
+}
+@mixin register-form{
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
 }

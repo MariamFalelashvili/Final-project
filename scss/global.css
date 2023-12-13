@@ -163,7 +163,8 @@ header .container {
   opacity: 0.9;
 }
 header .container .div1 {
-  width: 90%;
+  width: 95%;
+  right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -222,13 +223,49 @@ header .container .div1 button {
 header .container .div1 button .fa-caret-up {
   margin-right: 10px;
 }
+header .container .div1 button .fa-caret-up:hover {
+  opacity: 0.6;
+}
 header .container .div1 button h2 {
   color: #eae2e2;
   font-size: 25px;
   font-family: Helvetica;
 }
 header .container .div1 button h2:hover {
-  color: #484141;
+  opacity: 0.6;
+}
+header .container .div1 button .fa-heart:hover {
+  opacity: 0.6;
+}
+header .container .div1 select {
+  width: 100px;
+  height: 30px;
+  background-color: #eae2e2;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+header .container .div1 select:hover {
+  opacity: 0.8;
+}
+header .container .div1 select option {
+  font-family: Helvetica;
+  font-size: 15px;
+  color: #514242;
+}
+header .container .div1 select .categories {
+  display: none;
+}
+header .container .div1 .favorites {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .div1 .favorites:hover {
+  opacity: 0.8;
+}
+header .container .div1 .favorites .fa-heart {
+  margin-right: 10px;
 }
 header .container .div1 .fa-bars {
   display: none;
@@ -237,6 +274,67 @@ header .container .div1 .fa-bars {
   header .container .div1 .fa-bars {
     display: block;
   }
+}
+header .container .div1 .fa-user {
+  cursor: pointer;
+}
+header .container .div1 .fa-user:hover {
+  opacity: 0.5;
+}
+header .register-form {
+  display: none;
+  position: fixed;
+  left: 550px;
+  top: 250px;
+  z-index: 9;
+}
+header .register-form .form-container {
+  max-width: 400px;
+  background-color: white;
+  padding: 10px;
+}
+header .register-form .form-container h1 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+header .register-form .form-container label {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .register-form .form-container input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+header .register-form .form-container .btn {
+  background-color: #1a9f6e;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+header .register-form .form-container .btn:hover {
+  opacity: 1;
+}
+header .register-form .form-container .cancel {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+header .register-form .form-container .cancel:hover {
+  opacity: 1;
 }
 
 .container2 {
@@ -270,7 +368,7 @@ header .container .div1 .fa-bars {
   font-size: 20px;
 }
 .container2 nav ul a:hover {
-  color: #484141;
+  opacity: 0.6;
 }
 
 .div5 h2 {
@@ -288,6 +386,123 @@ header .container .div1 .fa-bars {
   margin-left: 100px;
 }
 
+section {
+  width: 100%;
+}
+section .container {
+  width: 100%;
+  margin-top: 120px;
+}
+section .container .div1 {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+section .container .div1 h1 {
+  font-family: Helvetica;
+  font-size: 30px;
+}
+section .container .div1 h3 {
+  font-family: Helvetica;
+  color: #a18686;
+  cursor: pointer;
+}
+section .container .div1 h3:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+section .container .card-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+section .container .card-wrapper .card {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container .card-wrapper .card:hover {
+  opacity: 0.8;
+}
+section .container .card-wrapper .card img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  filter: brightness(50%);
+  border-radius: 10px;
+}
+section .container .card-wrapper .card h2 {
+  color: #f8f8f8;
+  font-family: Helvetica;
+  font-size: 40px;
+  position: absolute;
+}
+section .container .fa-arrow-right:hover {
+  opacity: 0.7;
+}
+section .container2 {
+  margin: 0 auto;
+  width: 83%;
+  height: 600px;
+  background-image: url(../images/8.jpeg);
+  background-size: cover;
+  margin-top: 120px;
+  margin-bottom: 74px;
+  border-radius: 10px;
+  filter: brightness(70%);
+  border: 1px solid white;
+  opacity: 1;
+}
+section .container2 .Yoga h2 {
+  font-family: cursive;
+  font-size: 40px;
+  color: white;
+  margin-top: 60px;
+  margin-left: 70px;
+}
+section .container2 .Yoga h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: #514242;
+  margin-top: 30px;
+  margin-left: 150px;
+  color: #eae2e2;
+}
+section .container2 p {
+  font-size: 25px;
+  width: 400px;
+  margin-left: 840px;
+  color: white;
+  font-family: Hevetica, sans-serif;
+}
+section .container2 .readmore {
+  width: 140px;
+  height: 60px;
+  background-color: #79967b;
+  border-radius: 10px;
+  margin-left: 90px;
+  margin-top: 80px;
+  border: none;
+}
+section .container2 .readmore:hover {
+  opacity: 0.7;
+}
+section .container2 .readmore h4 {
+  color: #f8f8f8;
+  font-family: Helvetica;
+  font-size: 20px;
+}
+section .container2 .readmore h4:hover {
+  opacity: 0.6;
+}
+
 footer {
   max-width: 100%;
 }
@@ -297,9 +512,14 @@ footer button {
   background-color: #7ea68d;
   border: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  padding-top: 15px;
+  cursor: pointer;
+}
+footer button:hover {
+  background-color: rgba(126, 166, 141, 0.7725490196);
 }
 footer button h2 {
   color: #eae2e2;
@@ -347,7 +567,7 @@ footer .container .card2 ul li a {
   font-size: 20px;
 }
 footer .container .card2 ul li a:hover {
-  color: #484141;
+  opacity: 0.6;
 }
 footer .container .card3 {
   width: 160px;
@@ -369,7 +589,7 @@ footer .container .card3 ul li a {
   font-size: 20px;
 }
 footer .container .card3 ul li a:hover {
-  color: #484141;
+  opacity: 0.6;
 }
 footer .container .card4 {
   width: 200px;
