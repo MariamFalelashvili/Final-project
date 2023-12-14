@@ -148,11 +148,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (max-width: 1220px) {
-  header img {
-    display: none;
-  }
-}
 header .container {
   width: 100%;
   height: 136px;
@@ -201,6 +196,7 @@ header .container .div1 .div2 form input {
   color: gray;
   text-align: center;
   border: none;
+  outline-color: #4d5f4e;
 }
 header .container .div1 .div2 form .fa-magnifying-glass {
   position: absolute;
@@ -214,11 +210,6 @@ header .container .div1 button {
   align-items: center;
   background: none;
   border: none;
-}
-@media (max-width: 900px) {
-  header .container .div1 button {
-    display: none;
-  }
 }
 header .container .div1 button .fa-caret-up {
   margin-right: 10px;
@@ -389,6 +380,7 @@ header .register-form .form-container .cancel:hover {
 .s-1 .container {
   max-width: 1500px;
   width: 100%;
+  margin: 0 auto;
   margin-top: 120px;
 }
 .s-1 .container .div1 {
@@ -446,7 +438,7 @@ header .register-form .form-container .cancel:hover {
   opacity: 0.7;
 }
 
-.s-2 .container2 {
+.s-2 .container3 {
   margin: 0 auto;
   max-width: 1240px;
   width: 100%;
@@ -455,7 +447,7 @@ header .register-form .form-container .cancel:hover {
   margin-bottom: 74px;
   border-radius: 10px;
 }
-.s-2 .container2 .Yoga .image {
+.s-2 .container3 .image {
   width: 100%;
   height: 600px;
   background-image: url(../images/8.jpeg);
@@ -464,19 +456,19 @@ header .register-form .form-container .cancel:hover {
   position: relative;
   border-radius: 10px;
 }
-.s-2 .container2 .Yoga .image .yoga-text {
+.s-2 .container3 .image .yoga-text {
   width: 100%;
   height: 600px;
   position: absolute;
 }
-.s-2 .container2 .Yoga .image .yoga-text h2 {
+.s-2 .container3 .image .yoga-text h2 {
   font-family: cursive;
   font-size: 40px;
   color: white;
   margin-top: 60px;
   margin-left: 70px;
 }
-.s-2 .container2 .Yoga .image .yoga-text h3 {
+.s-2 .container3 .image .yoga-text h3 {
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   color: #514242;
@@ -484,14 +476,15 @@ header .register-form .form-container .cancel:hover {
   margin-left: 150px;
   color: #eae2e2;
 }
-.s-2 .container2 .Yoga .image p {
+.s-2 .container3 .image p {
   font-size: 25px;
   width: 400px;
-  margin-left: 840px;
+  margin-left: 820px;
   color: white;
   font-family: Hevetica, sans-serif;
+  line-height: 30px;
 }
-.s-2 .container2 .Yoga .image .readmore {
+.s-2 .container3 .image .readmore {
   width: 140px;
   height: 60px;
   background-color: #79967b;
@@ -500,15 +493,15 @@ header .register-form .form-container .cancel:hover {
   margin-top: 80px;
   border: none;
 }
-.s-2 .container2 .Yoga .image .readmore:hover {
+.s-2 .container3 .image .readmore:hover {
   opacity: 0.7;
 }
-.s-2 .container2 .Yoga .image .readmore h4 {
+.s-2 .container3 .image .readmore h4 {
   color: #f8f8f8;
   font-family: Helvetica;
   font-size: 20px;
 }
-.s-2 .container2 .Yoga .image .readmore h4:hover {
+.s-2 .container3 .image .readmore h4:hover {
   opacity: 0.6;
 }
 
@@ -517,36 +510,41 @@ header .register-form .form-container .cancel:hover {
   height: 750px;
   background-color: rgba(234, 231, 231, 0.937254902);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
-.s-3 h2 {
+.s-3 .container4 {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.s-3 .container4 h2 {
   font-family: Helvetica;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
   margin-left: 210px;
 }
-.s-3 .card-wrapper2 {
+.s-3 .container4 .card-wrapper2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-content: space-around;
 }
-.s-3 .card-wrapper2 .card1 {
+.s-3 .container4 .card-wrapper2 .card1 {
   width: 400px;
   height: 550px;
   border: 1px solid rgb(70, 68, 68);
   border-radius: 20px;
 }
-.s-3 .card-wrapper2 .card1 img {
+.s-3 .container4 .card-wrapper2 .card1 img {
   width: 100%;
   height: 55%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-.s-3 .card-wrapper2 .card1 .card-body {
+.s-3 .container4 .card-wrapper2 .card1 .card-body {
   width: 100%;
   height: 224px;
   display: flex;
@@ -554,17 +552,17 @@ header .register-form .form-container .cancel:hover {
   justify-content: space-evenly;
   margin-left: 10px;
 }
-.s-3 .card-wrapper2 .card1 .card-body h5 {
+.s-3 .container4 .card-wrapper2 .card1 .card-body h5 {
   font-family: Helvetica;
   font-size: 30px;
   font-weight: bold;
 }
-.s-3 .card-wrapper2 .card1 .card-body p {
+.s-3 .container4 .card-wrapper2 .card1 .card-body p {
   font-family: Helvetica;
   font-size: 20px;
   width: 250px;
 }
-.s-3 .card-wrapper2 .card1 .card-body .a {
+.s-3 .container4 .card-wrapper2 .card1 .card-body .a {
   width: 150px;
   height: 50px;
   background-color: rgba(17, 114, 78, 0.9450980392);
@@ -572,20 +570,20 @@ header .register-form .form-container .cancel:hover {
   align-items: center;
   border-radius: 10px;
 }
-.s-3 .card-wrapper2 .card1 .card-body .a:hover {
+.s-3 .container4 .card-wrapper2 .card1 .card-body .a:hover {
   opacity: 0.7;
 }
-.s-3 .card-wrapper2 .card1 .card-body .a a {
+.s-3 .container4 .card-wrapper2 .card1 .card-body .a a {
   color: #f1f1f1;
   font-family: sans-serif;
   font-size: 25px;
   width: 100%;
   margin-left: 10px;
 }
-.s-3 .fa-arrow-right {
+.s-3 .container4 .fa-arrow-right {
   cursor: pointer;
 }
-.s-3 .fa-arrow-right:hover {
+.s-3 .container4 .fa-arrow-right:hover {
   opacity: 0.7;
 }
 
