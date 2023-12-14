@@ -28,7 +28,7 @@
           </div>
             <select class="form-select" aria-label="Default select example">
             <option class="categories">Categories</option>
-            <option value="1">Healthy Cooking</option>
+            <option value="1"><a href="pages/healthyeating"></a>Healthy Eating</option>
             <option value="2">GYM Guid For Beginners</option>
             <option value="3">Home Workout</option>
             <option value="4">Yoga</option>
@@ -192,7 +192,7 @@
         <h3>"a healthy mind in a healthy body"</h3>
       </div>
     </header>
-    <section>
+    <section class="s-1">
       <div class="container">
         <div class="div1">
           <h1>Categories</h1>
@@ -200,10 +200,10 @@
         </div>
         <div class="card-wrapper">
           <i class="fa-solid fa-arrow-right fa-flip-horizontal fa-2xl" style="color: #a09898;"></i>
-          <div class="card">
+          <a href="pages/healthyeating" target="_blank"><div class="card">
             <img src="images/4.jpeg" alt="Healthy cooking">
-            <h2>Healthy<br>Cooking</h2>
-          </div>
+            <h2>Healthy<br>Eating</h2>
+          </div></a>
           <div class="card">
             <img src="images/6.webp" alt="GYM">
             <h2>GYM Guide<br>For Beginners</h2>
@@ -215,19 +215,25 @@
           <i class="fa-solid fa-arrow-right fa-2xl" style="color: #a09898;"></i>
         </div>
       </div>
+    </section>
+    <section class="s-2">
       <div class="container2">
         <div class="Yoga">
-            <h2>
-            “Quiet the mind and<br> the soul will speak.”
-            </h2>
-            <h3>– Ma Jaya Sati Bhagavati</h3>
-            <p dir="rtl">
-              In mindfulness meditation, we’re learning how to pay attention to the breath as it goes in and out, and notice when the mind wanders from this task.<br>Sometimes, that’s all we need to make better choices for ourselves, our families, and our communities. 
-            </p>
+          <div class="image">
+            <div class="yoga-text">
+              <h2>
+                “Quiet the mind and<br> the soul will speak.”
+                </h2>
+                <h3> – Ma Jaya Sati Bhagavati</h3>
+                <p dir="rtl">
+                  In mindfulness meditation, we’re learning how to pay attention to the breath as it goes in and out, and notice when the mind wanders from this task.<br>Sometimes, that’s all we need to make better choices for ourselves, our families, and our communities. 
+                </p>
+                <button class="readmore" onclick="openForm()">
+                  <h4>Read more</h4>
+                </button>
+            </div>
+          </div>
         </div>
-        <button class="readmore" onclick="openForm()">
-          <h4>Read more</h4>
-        </button>
       </div>
     </section>
     <section class="s-3">
