@@ -1,0 +1,43 @@
+@mixin goflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin h3{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    color: #514242;
+}
+@mixin li{
+    color: #f8f8f8;
+        font-family: Helvetica;
+        font-size: 20px;
+        &:hover {
+        opacity: 0.6;
+      }
+}
+@mixin card-style{
+    display: flex;
+      align-items: center;
+      ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        li{
+          margin-top: 10px;
+          line-height: 25px;
+          a{
+            @include li;
+          }
+        }
+      }
+}
+@mixin register-form{
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}

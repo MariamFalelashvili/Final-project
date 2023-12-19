@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HealthyLife</title>
     <link rel="stylesheet" href="scss/global.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <script
       src="https://kit.fontawesome.com/077d12e354.js"
       crossorigin="anonymous"
@@ -169,10 +170,10 @@
         <nav>
           <ul>
             <li>
-              <a href="">About Us</a>
+              <a href="pages/aboutus.html">About Us</a>
             </li>
             <li>
-              <a href="">Services</a>
+              <a href="pages/Services.html">Services</a>
             </li>
             <li>
               <a href="">News</a>
@@ -267,86 +268,86 @@
         </div>
       </div>
     </section>
-    <footer>
-      <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fa-solid fa-arrow-up fa-lg" style="color: #eae2e2"></i>
-        <h2>Back To Top</h2>
-      </button>
-      <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction();
-        };
-
-        function scrollFunction() {
-          if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-          ) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
-      <div class="container">
-        <div class="card1">
-          <a href="#"><img src="images/logo.svg" alt="LOGO" /></a>
-          <h3>"a healthy mind in a healthy body"</h3>
-        </div>
-        <div class="card2">
-          <ul>
-            <li>
-              <a href="">Help</a>
-            </li>
-            <li>
-              <a href="">About us</a>
-            </li>
-            <li>
-              <a href="">Contact us</a>
-            </li>
-            <li>
-              <a href="">FAQ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card3">
-          <ul>
-            <li>
-              <a href="">Your Account</a>
-            </li>
-            <li>
-              <a href="">Your Orders</a>
-            </li>
-            <li>
-              <a href="">shipping Rates & Policies</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card4">
-          <a href=""
-            ><i class="fa-brands fa-instagram fa-2xl" style="color: #eae2e2"></i
-          ></a>
-          <a href=""
-            ><i class="fa-brands fa-facebook fa-2xl" style="color: #eae2e2"></i
-          ></a>
-          <a href=""
-            ><i class="fa-brands fa-tiktok fa-2xl" style="color: #eae2e2"></i
-          ></a>
-          <a href=""
-            ><i class="fa-brands fa-youtube fa-2xl" style="color: #eae2e2"></i
-          ></a>
-        </div>
-      </div>
-    </footer>
   </body>
+  <footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-up fa-lg" style="color: #eae2e2"></i>
+      <h2>Back To Top</h2>
+    </button>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <div class="container">
+      <div class="card1">
+        <a href="#"><img src="images/logo.svg" alt="LOGO" /></a>
+        <h3>"a healthy mind in a healthy body"</h3>
+      </div>
+      <div class="card2">
+        <ul>
+          <li>
+            <a href="">Help</a>
+          </li>
+          <li>
+            <a href="">About us</a>
+          </li>
+          <li>
+            <a href="">Contact us</a>
+          </li>
+          <li>
+            <a href="">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card3">
+        <ul>
+          <li>
+            <a href="">Your Account</a>
+          </li>
+          <li>
+            <a href="">Your Orders</a>
+          </li>
+          <li>
+            <a href="">shipping Rates & Policies</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card4">
+        <a href=""
+          ><i class="fa-brands fa-instagram fa-2xl" style="color: #eae2e2"></i
+        ></a>
+        <a href=""
+          ><i class="fa-brands fa-facebook fa-2xl" style="color: #eae2e2"></i
+        ></a>
+        <a href=""
+          ><i class="fa-brands fa-tiktok fa-2xl" style="color: #eae2e2"></i
+        ></a>
+        <a href=""
+          ><i class="fa-brands fa-youtube fa-2xl" style="color: #eae2e2"></i
+        ></a>
+      </div>
+    </div>
+  </footer>
 </html>

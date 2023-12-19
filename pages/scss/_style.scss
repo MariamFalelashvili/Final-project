@@ -1,0 +1,337 @@
+header {
+  width: 100%;
+  height: 250px;
+  .container {
+    width: 100%;
+    height: 136px;
+    background-color: $color2;
+    @include goflex;
+    opacity: 0.9;
+    .div1 {
+      width: 95%;
+      right: 10px;
+      @include goflex;
+      margin: 0 auto;
+      img {
+        width: 300px;
+      }
+      .div2 {
+        max-width: 600px;
+        @include goflex;
+        @media (max-width: 900px) {
+          width: 90%;
+          justify-content: space-between;
+        }
+        form {
+          width: 560px;
+          height: 40px;
+          input {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            color: gray;
+            text-align: center;
+            border: none;
+            outline-color: #4d5f4e;
+          }
+          .fa-magnifying-glass {
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 10px;
+          }
+        }
+      }
+      button {
+        width: 150px;
+        @include goflex;
+        background: none;
+        border: none;
+        .fa-caret-up {
+          margin-right: 10px;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+        h2 {
+          color: $text-color;
+          font-size: 25px;
+          font-family: Helvetica;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+        .fa-heart {
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+      select {
+        width: 100px;
+        height: 30px;
+        background-color: $text-color;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+
+        option {
+          font-family: Helvetica;
+          font-size: 20px;
+          color: #514242;
+        }
+        .categories {
+          display: none;
+        }
+      }
+      .favorites {
+        @include goflex;
+        &:hover {
+          opacity: 0.8;
+        }
+        .fa-heart {
+          margin-right: 10px;
+        }
+      }
+      .fa-bars {
+        display: none;
+        @media (max-width: 900px) {
+          display: block;
+        }
+      }
+      .fa-user {
+        cursor: pointer;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .register-form {
+    display: none;
+    position: fixed;
+    left: 550px;
+    top: 250px;
+    z-index: 9;
+    .form-container {
+      max-width: 400px;
+      background-color: white;
+      padding: 10px;
+      h1 {
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      input {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+      .btn {
+        background-color: #1a9f6e;
+        @include register-form;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .cancel {
+        background-color: red;
+        @include register-form;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .container2 {
+    width: 100%;
+    height: 72px;
+    background-color: $color3;
+    opacity: 0.7;
+    @media (max-width: 900px) {
+      display: none;
+    }
+    nav {
+      margin: 0 auto;
+      @include goflex;
+      width: 40%;
+      height: 100%;
+      ul {
+        width: 100%;
+        @include goflex;
+        a {
+          @include li;
+        }
+      }
+    }
+  }
+}
+.s-1{
+  width: 100%;
+  margin-bottom: 70px;
+  hr{
+    height: 3px;
+    background-color: gray;
+  }
+  h1{
+    max-width: 210px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 50px;
+    font-family: Helvetica;
+  }
+}
+.s-2{
+  margin-bottom: 50px;
+  .card-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .card-1{
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        border-radius: 80%;
+        object-fit: cover;
+        width: 300px;
+        border: 2px solid black;
+      }
+      h3{
+        font-family: cursive;
+        font-size: 40px;
+        color: black;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      h4{
+        font-family: helvetica;
+        font-size: 20px;
+        color: gray;
+      }
+    }
+  }
+}
+.s-3{
+  width: 100%;
+  .div1{
+    img{
+      width: 100%;
+      height: 100%;
+      filter: brightness(40%);
+      &:hover{
+        filter: brightness(20%);
+      }
+    }
+  }
+  .div2{
+    width: 50%;
+    height: 633px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 784px;
+    .title{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 30px;
+      h1{
+        font-family: cursive;
+        color: white;
+        font-size:50px;
+      }
+      .line{
+        width: 400px;
+        height: 2px;
+        background-color: white;
+      }
+    }
+    p{
+      width: 90%;
+      color: white;
+      font-family: Helvetica;
+      line-height: 25px;
+      padding-left: 30px;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  }
+}
+footer {
+  max-width: 100%;
+  margin-top: 70px;
+  button {
+    width: 100%;
+    height: 72px;
+    background-color: #7ea68d;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+    &:hover {
+      background-color: #7ea68dc5;
+    }
+    cursor: pointer;
+    h2 {
+      color: $text-color;
+      font-weight: bold;
+    }
+  }
+  .container {
+    width: 100%;
+    height: 300px;
+    background-color: $color2;
+    display: flex;
+    justify-content: space-around;
+    .card1 {
+      max-width: 300px;
+      height: 100%;
+      img {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      h3 {
+        @include h3;
+        color: $text-color;
+      }
+    }
+    .card2 {
+      width: 100px;
+      @include card-style;
+    }
+    .card3 {
+      width: 160px;
+      @include card-style;
+    }
+    .card4 {
+      width: 200px;
+      height: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      .fa-brands{
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
