@@ -176,10 +176,10 @@
               <a href="pages/Services.html">Services</a>
             </li>
             <li>
-              <a href="">News</a>
+              <a href="pages/news.html">News</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="pages/contact.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -215,16 +215,42 @@
                 <img src="images/12.jpeg" alt="Home Workout">
                 <h2>Home<br>Workout</h2>
               </div>
-            </div>
-
+            </div><span id="dots">...</span><span id="more"> 
+            <div class="card-wrapper">
+              <a href="pages/healthyeating" target="_blank">
+                <div class="card">
+                <img src="images/yoga2.jpg" alt="Healthy cooking">
+                <h2>Yoga</h2>
+                </div>
+              </a>
+              <div class="card">
+                <img src="images/meditation.jpg" alt="GYM">
+                <h2>Meditation</h2>
+              </div>
+              <div class="card">
+                <img src="images/7.jpeg" alt="Home Workout">
+                <h2>Podcasts</h2>
+              </div>
+            </div></span>
+          </p>
         </div>
-        
+        <script>
+          function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
           
-        
-
-
-          
-
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Read more"; 
+              moreText.style.display = "none";
+            } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Read less"; 
+              moreText.style.display = "inline";
+            }
+          }
+  </script>
       </div>
     </section>
     <section class="s-2">
