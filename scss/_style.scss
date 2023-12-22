@@ -175,6 +175,10 @@ header {
       @include goflex;
       a {
         @include li;
+        &:hover{
+          text-decoration: underline;
+          text-underline-offset: 15px;
+        }
       }
     }
   }

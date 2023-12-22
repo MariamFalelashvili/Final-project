@@ -269,7 +269,8 @@ header .container2 nav ul a {
   font-size: 20px;
 }
 header .container2 nav ul a:hover {
-  opacity: 0.6;
+  text-decoration: underline;
+  text-underline-offset: 15px;
 }
 
 .s-1 {
@@ -552,9 +553,6 @@ footer .container .card2 ul li a {
   font-family: Helvetica;
   font-size: 20px;
 }
-footer .container .card2 ul li a:hover {
-  opacity: 0.6;
-}
 footer .container .card3 {
   width: 160px;
   display: flex;
@@ -573,9 +571,6 @@ footer .container .card3 ul li a {
   color: #f8f8f8;
   font-family: Helvetica;
   font-size: 20px;
-}
-footer .container .card3 ul li a:hover {
-  opacity: 0.6;
 }
 footer .container .card4 {
   width: 200px;
