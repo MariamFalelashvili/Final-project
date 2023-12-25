@@ -142,12 +142,16 @@ a {
 }
 
 header {
-  max-width: 1600px;
   width: 100%;
-  height: 1000px;
+  min-height: 1000px;
   background-image: url(../images/1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1220px) {
+  header {
+    width: auto;
+  }
 }
 header .container {
   width: 100%;
@@ -171,18 +175,13 @@ header .container .div1 img {
 }
 header .container .div1 .div2 {
   max-width: 600px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 900px) {
-  header .container .div1 .div2 {
-    width: 90%;
-    justify-content: space-between;
-  }
-}
 header .container .div1 .div2 form {
-  width: 560px;
+  width: 93%;
   height: 40px;
 }
 header .container .div1 .div2 form input {
@@ -199,73 +198,58 @@ header .container .div1 .div2 form .fa-magnifying-glass {
   margin-top: 18px;
   margin-left: 10px;
 }
-header .container .div1 button {
-  width: 150px;
+header .container .div1 .scroll-downs {
   display: flex;
+  max-width: 280px;
+  width: 100%;
   justify-content: space-between;
-  align-items: center;
-  background: none;
-  border: none;
 }
-header .container .div1 button .fa-caret-up {
-  margin-right: 10px;
-}
-header .container .div1 button .fa-caret-up:hover {
-  opacity: 0.6;
-}
-header .container .div1 button h2 {
-  color: #eae2e2;
-  font-size: 25px;
-  font-family: Helvetica;
-}
-header .container .div1 button h2:hover {
-  opacity: 0.6;
-}
-header .container .div1 button .fa-heart:hover {
-  opacity: 0.6;
-}
-header .container .div1 select {
-  width: 100px;
+header .container .div1 .scroll-downs select {
+  max-width: 100px;
+  width: 100%;
   height: 30px;
   background-color: #eae2e2;
   border: none;
   border-radius: 7px;
   cursor: pointer;
 }
-header .container .div1 select:hover {
+header .container .div1 .scroll-downs select:hover {
   opacity: 0.8;
 }
-header .container .div1 select option {
+header .container .div1 .scroll-downs select option {
   font-family: Helvetica;
   font-size: 20px;
   color: #514242;
 }
-header .container .div1 select .categories {
+header .container .div1 .scroll-downs select .categories {
   display: none;
 }
-header .container .div1 .favorites {
+header .container .div1 .scroll-downs .favorites {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .container .div1 .favorites:hover {
+header .container .div1 .scroll-downs .favorites:hover {
   opacity: 0.8;
 }
-header .container .div1 .favorites .fa-heart {
+header .container .div1 .scroll-downs .favorites .fa-heart {
   margin-right: 10px;
 }
-header .container .div1 .fa-bars {
+header .container .div1 .scroll-downs .fa-bars {
   display: none;
 }
-@media (max-width: 900px) {
-  header .container .div1 .fa-bars {
-    display: block;
-  }
-}
-header .container .div1 .fa-user {
+header .container .div1 .scroll-downs .fa-user {
   cursor: pointer;
 }
-header .container .div1 .fa-user:hover {
+header .container .div1 .scroll-downs .fa-user:hover {
+  opacity: 0.5;
+}
+header .user {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+header .user:hover {
   opacity: 0.5;
 }
 header .register-form {
@@ -330,11 +314,6 @@ header .register-form .form-container .cancel:hover {
   background-color: rgba(121, 150, 132, 0.9098039216);
   opacity: 0.7;
 }
-@media (max-width: 900px) {
-  .container2 {
-    display: none;
-  }
-}
 .container2 nav {
   margin: 0 auto;
   display: flex;
@@ -377,6 +356,7 @@ header .register-form .form-container .cancel:hover {
 .s-1 .container {
   max-width: 1380px;
   width: 100%;
+  height: 700px;
   margin: 0 auto;
   margin-top: 120px;
 }
@@ -404,7 +384,7 @@ header .register-form .form-container .cancel:hover {
   text-decoration: underline;
 }
 .s-1 .container .slide-wrapper {
-  height: 600px;
+  height: 530px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -415,6 +395,11 @@ header .register-form .form-container .cancel:hover {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+}
+@media only screen and (max-width: 1100px) {
+  .s-1 .container .slide-wrapper .card-wrapper {
+    flex-direction: column;
+  }
 }
 .s-1 .container .slide-wrapper .card-wrapper .card {
   width: 350px;
@@ -478,6 +463,18 @@ header .register-form .form-container .cancel:hover {
 }
 .s-1 .container .slide-wrapper #dots {
   color: white;
+}
+.s-1 .container .slide-wrapper .seemore {
+  font-family: Helvetica;
+  color: #a18686;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.s-1 .container .slide-wrapper .seemore:hover {
+  opacity: 0.7;
+  text-decoration: underline;
 }
 
 .s-2 .container3 {

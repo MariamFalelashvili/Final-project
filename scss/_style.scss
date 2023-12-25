@@ -1,10 +1,12 @@
 header {
-  max-width: 1600px;
   width: 100%;
-  height: 1000px;
+  min-height: 1000px;
   background-image: url(../images/1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  @media only screen and (max-width: 1220px) {
+    width: auto;
+  }
   .container {
     width: 100%;
     height: 136px;
@@ -21,13 +23,10 @@ header {
       }
       .div2 {
         max-width: 600px;
+        width: 100%;
         @include goflex;
-        @media (max-width: 900px) {
-          width: 90%;
-          justify-content: space-between;
-        }
         form {
-          width: 560px;
+          width: 93%;
           height: 40px;
           input {
             width: 100%;
@@ -45,72 +44,58 @@ header {
           }
         }
       }
-      button {
-        width: 150px;
-        @include goflex;
-        background: none;
-        border: none;
-        .fa-caret-up {
-          margin-right: 10px;
+      .scroll-downs {
+        display: flex;
+        max-width: 280px;
+        width: 100%;
+        justify-content: space-between;
+        select {
+          max-width: 100px;
+          width: 100%;
+          height: 30px;
+          background-color: $text-color;
+          border: none;
+          border-radius: 7px;
+          cursor: pointer;
           &:hover {
-            opacity: 0.6;
+            opacity: 0.8;
+          }
+          option {
+            font-family: Helvetica;
+            font-size: 20px;
+            color: #514242;
+          }
+          .categories {
+            display: none;
           }
         }
-        h2 {
-          color: $text-color;
-          font-size: 25px;
-          font-family: Helvetica;
+        .favorites {
+          @include goflex;
           &:hover {
-            opacity: 0.6;
+            opacity: 0.8;
+          }
+          .fa-heart {
+            margin-right: 10px;
           }
         }
-        .fa-heart {
-          &:hover {
-            opacity: 0.6;
-          }
-        }
-      }
-      select {
-        width: 100px;
-        height: 30px;
-        background-color: $text-color;
-        border: none;
-        border-radius: 7px;
-        cursor: pointer;
-        &:hover {
-          opacity: 0.8;
-        }
-
-        option {
-          font-family: Helvetica;
-          font-size: 20px;
-          color: #514242;
-        }
-        .categories {
+        .fa-bars {
           display: none;
         }
-      }
-      .favorites {
-        @include goflex;
-        &:hover {
-          opacity: 0.8;
-        }
-        .fa-heart {
-          margin-right: 10px;
+        .fa-user {
+          cursor: pointer;
+          &:hover {
+            opacity: 0.5;
+          }
         }
       }
-      .fa-bars {
-        display: none;
-        @media (max-width: 900px) {
-          display: block;
-        }
-      }
-      .fa-user {
-        cursor: pointer;
-        &:hover {
-          opacity: 0.5;
-        }
-      }
+    }
+  }
+  .user {
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
     }
   }
   .register-form {
@@ -162,9 +147,6 @@ header {
   height: 72px;
   background-color: $color3;
   opacity: 0.7;
-  @media (max-width: 900px) {
-    display: none;
-  }
   nav {
     margin: 0 auto;
     @include goflex;
@@ -201,6 +183,7 @@ header {
   .container {
     max-width: 1380px;
     width: 100%;
+    height: 700px;
     margin: 0 auto;
     margin-top: 120px;
     .div1 {
@@ -225,11 +208,14 @@ header {
       }
     }
     .slide-wrapper {
-      height: 600px;
+      height: 530px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       .card-wrapper {
+        @media only screen and (max-width: 1100px) {
+          flex-direction: column;
+        }
         width: 90%;
         @include goflex;
         margin: 0 auto;
@@ -267,6 +253,18 @@ header {
       }
       #dots {
         color: white;
+      }
+      .seemore {
+        font-family: Helvetica;
+        color: #a18686;
+        background: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+          text-decoration: underline;
+        }
+        display: none;
       }
     }
   }
